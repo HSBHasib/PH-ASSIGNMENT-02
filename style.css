@@ -19,7 +19,7 @@
     --hv-primary-card:#2e1153;
 
     --bg-card-secondary-clr: #250D44;
-    --hv-secondary-card:#31125a;
+    --hv-secondary-card:#290953d6;
 
     --wh-clr: #FFF;
     --secondary-text-clr: #D1CED5;
@@ -31,6 +31,7 @@
     
     --nav-border-line-clr:#412567;
     --border-line-clr: #ffffff25;
+    --icon-border: #533C72;
 }
 
 .section-center {
@@ -338,6 +339,7 @@ nav {
     color: var(--secondary-text-clr);
     max-width: 90%;
     line-height: 1.2rem;
+    opacity: 0.8;
 }
 
 .card-4>i {
@@ -395,9 +397,90 @@ nav {
     font-size: 0.9rem;
     margin-block: 1rem;
     line-height: 1.3rem;
+    opacity: 0.8;
 }
 
 .ep-card-content h4 {
     color: var(--special-clr);
     font-size: 1rem;
+}
+
+
+
+/* Host-Section */
+.host-section {
+    background-color: var(--bg-primary-clr);
+    background-color: #1A0B2E;
+    color: var(--wh-clr);
+    margin-top: -1px;
+    padding-bottom: 4.5rem;
+}
+
+.host-container>h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+    color: var(--wh-clr);
+    padding-top: 1.5rem;
+}
+
+.host-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.host-content {
+    background-color: var(--bg-card-secondary-clr);
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+
+.host-text-content {
+    max-width: 80%;
+    margin-left: 1.5rem;
+}
+
+.host-text-content h2 {
+    font-size: 1.8rem;
+    color: var(--wh-clr);
+}
+
+.host-text-content p {
+    color: var(--secondary-text-clr);
+    font-size: 0.85rem;
+    margin-block: 1rem;
+    opacity: 0.8;
+}
+
+.host-links {
+    display: flex;
+}
+
+.host-links
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1.5px solid var(--icon-border);
+    margin-right: 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+
+.host-links i {
+    font-size: 1rem;
+}
+
+.host-links
+.link:hover {
+    background-color: var(--hv-secondary-card);
+    transform: scale(1.05);
 }
