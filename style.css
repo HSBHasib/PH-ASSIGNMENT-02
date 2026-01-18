@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Common Style */
+.nav-bar-icon {
+    display: none;
+}
+
+:root {
+    --bg-primary-clr: #1A0B2E;
+    --bg-secondary-clr: #230E3D;
+
+    --bg-card-Primary-clr: #2A0F4D;
+    --bg-card-secondary-clr: #250D44;
+
+    --wh-clr: #FFF;
+    --secondary-text-clr: #D1CED5;
+    --special-clr: #00FF88;
+
+    --linear-clr-1:rgba(247, 233, 63, 1);
+    --linear-clr-2:rgba(251, 9, 180, 1);
+    --linear-clr-3:rgba(145, 0, 248, 1);
+    
+    --hv-linear-clr-1:rgba(247, 232, 63, 0.886);
+    --hv-linear-clr-2:rgba(251, 9, 178, 0.886);
+    --hv-linear-clr-3:rgba(145, 0, 248, 0.868);
+
+    --nav-border-line-clr:#412567;
+}
+
+.section-center {
+    width: 88%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.mixed-text-clr{
+    background-image: linear-gradient(to top, var(--linear-clr-1), var(--linear-clr-2), var(--linear-clr-3) );
+
+    /* Code for - Set the 3 different color just apply into text color */
+    -webkit-background-clp: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    padding: 0.7rem 1rem;
+    border-radius: 10rem;
+    border: none;
+    color: var(--wh-clr);
+    background-image: linear-gradient(to right, var(--linear-clr-1), var(--linear-clr-2), var(--linear-clr-3) );
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 
+        0 0 3px var(--linear-clr-1), 
+        0 0 3px var(--linear-clr-2), 
+        0 0 3px var(--linear-clr-3);
+}
+
+.btn:hover {
+    transform: scale(1.015);
+
+}
+
+.btn i {
+    margin-left: 0.2rem;
+}
+
+/* Header-Section | Navber-Section Code Start Here -- */
+nav {
+    background-color: var(--bg-primary-clr);
+    border-bottom: 1.5px solid var(--nav-border-line-clr);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+/* Nav-logo-part */
+.nav-container
+.nav-logo h2 {
+    font-size: 2.1875rem;
+    color: var(--wh-clr);
+    font-weight: 800;
+    letter-spacing: 0.03125rem;
+}
+
+/* Nav-links-part */
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--wh-clr);
+    font-size: 0.9rem;
+}
+
+
+
