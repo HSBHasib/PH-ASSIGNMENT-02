@@ -484,3 +484,63 @@ nav {
     background-color: var(--hv-secondary-card);
     transform: scale(1.05);
 }
+
+
+
+/* Footer-Section */
+footer {
+    background-image: url(./assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wh-clr);
+    min-height: 280px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container h1{
+    font-size: 4.5rem;
+}
+
+.ft-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 470px;
+    
+}
+
+.ft-links-container img {
+    width: 1.2rem;
+}
+
+.ft-links-container p {
+    font-size: 0.8rem;
+    color: var(--secondary-text-clr);
+    opacity: 0.8;
+    margin-left: 0.6rem;
+}
+
+.ft-links {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 1.5rem;
+}
+
+.footer-container>p {
+    font-size: 0.8rem;
+    color: var(--secondary-text-clr);
+    opacity: 0.8;
+    text-align: center;
+}
+
