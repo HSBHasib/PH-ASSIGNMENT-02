@@ -127,6 +127,7 @@ nav {
 .hero-section {
     background-image: url(./assets/hero-bg.png);
     background-size: cover;
+    background-position: center;
 }
 
 .hero-img-container {
@@ -151,7 +152,7 @@ nav {
 .hero-imgs {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
 }
 
 .hero-circle-img img,
