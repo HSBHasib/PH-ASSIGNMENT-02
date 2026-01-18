@@ -16,7 +16,10 @@
     --bg-secondary-clr: #230E3D;
 
     --bg-card-Primary-clr: #2A0F4D;
+    --hv-primary-card:#2e1153;
+
     --bg-card-secondary-clr: #250D44;
+    --hv-secondary-card:#31125a;
 
     --wh-clr: #FFF;
     --secondary-text-clr: #D1CED5;
@@ -288,7 +291,7 @@ nav {
 .choose-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 220px);
     grid-gap: 1.5rem;
 }
 
@@ -297,6 +300,11 @@ nav {
     padding: 2.5rem 2rem;
     border-radius: 2.5rem;
     align-content: center;
+    transition: all 0.2s linear;
+}
+
+.choose-cards:hover {
+    background-color: var(--hv-primary-card);
 }
 
 .card-1 {
@@ -316,7 +324,7 @@ nav {
 }
 
 .choose-cards img {
-    width: 2.5rem;
+    width: 2.4rem;
 }
 
 .choose-cards h3 {
@@ -329,9 +337,67 @@ nav {
     font-size: 0.8rem;
     color: var(--secondary-text-clr);
     max-width: 90%;
+    line-height: 1.2rem;
 }
 
 .card-4>i {
+    font-size: 2.4rem;    
+}
+
+
+
+/* Episode-Section */
+.episode-section {
+    background-color: var(--bg-primary-clr);
+    background-color: #1A0B2E;
+    color: var(--wh-clr);
+    margin-top: -1px;
+    padding-block: 4.5rem;
+}
+
+.ep-container>h2 {
+    text-align: center;
     font-size: 2.4rem;
-    
+    margin-bottom: 2.5rem;
+    color: var(--wh-clr);
+}
+
+.ep-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.8rem;
+}
+
+.ep-card {
+    background-color: var(--bg-card-secondary-clr);
+    border-radius: 2rem;
+}
+
+.ep-vedio-link iframe {
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 2rem ;
+    border-top-right-radius: 2rem;
+}
+
+.ep-card-content {
+    padding: 1rem;
+    height: 200px;
+    max-width: 300px;
+}
+
+.ep-card-content h2 {
+    font-size: 1.2rem;
+}
+
+.ep-card-content p {
+    color: var(--secondary-text-clr);
+    font-size: 0.9rem;
+    margin-block: 1rem;
+    line-height: 1.3rem;
+}
+
+.ep-card-content h4 {
+    color: var(--special-clr);
+    font-size: 1rem;
 }
