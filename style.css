@@ -86,7 +86,7 @@ ul {
 /* Header-Section | Navber-Section Code Start Here -- */
 nav {
     background-color: var(--bg-primary-clr);
-    border-bottom: 1.5px solid var(--nav-border-line-clr);
+    border-bottom: 0.09375rem solid var(--nav-border-line-clr);
 }
 
 .nav-container {
@@ -117,5 +117,98 @@ nav {
     font-size: 0.9rem;
 }
 
+
+/* Hero-Section  */
+
+
+
+
+/* Hero-Section Styling */
+.hero-section {
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+}
+
+.hero-img-container {
+    position: relative;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-circle-img img {
+    position: absolute;
+    width: 260px;
+}
+
+.hero-microphone-img img {
+    position: absolute;
+    width: 90px;
+}
+
+.hero-imgs {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.hero-circle-img img,
+.hero-microphone-img img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-msg-btn p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    background-color: var(--special-clr);
+    padding: 0.55rem 1rem;
+    border-radius: 10rem;
+    left: 50%;
+    top:50%;
+    /* Fix the msg top right corner */
+    transform: translate(calc(-50% + 88px), calc(-50% - 75px));
+}
+
+/* Hero-Content */
+.hero-content {
+    text-align: center;
+    color: var(--wh-clr);
+    padding: 1.5rem 0 3rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 0.8rem;
+    color: var(--secondary-text-clr);
+    margin: 0.6rem 0 1rem;
+}
+
+.hero-content .btn {
+    padding: 0.55rem 1rem;
+}
+
+.trans-btn {
+    background-color: transparent;
+    color: var(--special-clr);
+    border: 1px solid var(--special-clr);
+    padding: 0.55rem 1rem;
+    border-radius: 10rem;
+    margin-left: 0.4rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.trans-btn:hover {
+    transform: scale(1.03);
+}
 
 
